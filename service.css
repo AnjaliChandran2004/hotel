@@ -1,0 +1,36 @@
+.service-item {
+    height: 320px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 px rgba(0, 0, 0, .08);
+    transition: 0.5s;
+}
+
+.service-item:hover {
+    background: rgb(238, 234, 227);
+    box-shadow: 0 1rem 2rem rgba(20, 20, 20, 0.2);
+}
+
+.service-item .service-icon {
+    margin: 0 auto 30 auto;
+    width: 65px;
+    height: 65px;
+    transition: 0.5s;
+}
+.service-item i {
+    font-size: 40px;
+}
+.service-item i, .service-item a {
+    padding-top: 10px;
+    text-decoration: none;
+}
+.service-item i,
+.service-item h5,
+.service-item p {
+    text-align: center;
+    transition: 0.5s;
+}

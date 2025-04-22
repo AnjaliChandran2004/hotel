@@ -1,0 +1,459 @@
+
+
+ #navbar {
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+li {
+    padding: 5px;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid white;
+} 
+
+.navbar-brand img {
+    border-radius: 20%;
+    width: 100px;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 10px;
+    padding: 25px 0;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.btn {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.btn.btn-primary, .btn.btn-secondary {
+    color: #fff;
+}
+
+.icons i {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icons i:hover{
+    color: orange;
+}
+
+.search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    background: #333;
+    border: px solid rgba(255, 255, 255, .2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1001;
+}
+
+.search-bar-container #search-bar {
+    width: 100%;
+    padding: 10px;
+    text-transform: none;
+    color: #333;
+    font-size: 20px;
+    border-radius: .5rem;
+}
+
+.search-bar-container label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.search-bar-container label:hover {
+    color: orange;
+}
+
+/*login*/
+.login-form-container {
+    position: fixed;
+    top: -120%;
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container.active {
+    top: 0;
+}
+
+.login-form-container form {
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    width: 50rem;
+}
+
+.login-form-container form h3 {
+    font-size: 3rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.login-form-container form .box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: .6rem 0;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    text-transform: none;
+}
+
+.login-form-container form .box:focus {
+    border-color: orange;
+}
+
+.login-form-container form #remember {
+    margin: 2rem 0;
+}
+
+.login-form-container form label {
+    font-size: 15px;
+}
+
+.login-form-container form .btn {
+    display: block;
+    width: 100%;
+}
+
+.login-form-container form p {
+    padding: .5rem 0;
+    font-size: 10px;
+    color: #666;
+}
+
+.login-form-container form p a {
+    color: orange;
+}
+
+.login-form-container form p a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.login-form-container #form-close {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 43, 0.7);
+}
+
+.carousel-control-prev .carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon .carousel-control-next-icon {
+    width: 3rem, ;
+    height: 3rem;
+}
+
+.booking {
+    position: relative;
+    margin-top: -100px !important;
+    z-index: 1;
+}
+
+/* about */
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: rgb(197, 167, 129);
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: rgb(197, 167, 129);
+
+}
+
+.section-title.text-start::before 
+.section-title .text-start::after {
+    display: none;
+}
+
+/*Service*/
+.service-item {
+    height: 320px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 px rgba(0, 0, 0, .08);
+    transition: 0.5s;
+}
+
+.service-item:hover {
+    background: rgb(238, 234, 227);
+    box-shadow: 0 1rem 2rem rgba(20, 20, 20, 0.2);
+}
+
+.service-item .service-icon {
+    margin: 0 auto 30 auto;
+    width: 65px;
+    height: 65px;
+    transition: 0.5s;
+}
+
+.service-item i {
+    font-size: 40px;
+}
+
+.service-item i, .service-item a {
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.service-item i,
+.service-item h5,
+.service-item p {
+    text-align: center;
+    transition: 0.5s;
+}
+
+button {
+    background-color: rgb(0, 89, 255);
+    color: white;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+}
+
+button i {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+button span {
+    font-weight: 500;
+}
+
+span a {
+    text-decoration: none;
+    color: white;
+}
+
+/*f-room*/
+.text {
+    padding-right: 20px;
+    height: 150px;
+    width: 170px;
+    padding-top: 20px;
+    background: white;
+    box-shadow: 0 0 px rgba(22, 22, 22, 0.08);
+    transition: 0.5s;
+}
+
+.text:hover {
+    background: rgb(214, 208, 208);
+    box-shadow: 0 1rem 2rem rgba(20, 20, 20, 0.2);
+}
+
+/*review*/
+.testimonial .carousel-inner {
+    margin-top: 20px;
+    padding: 4rem 0;
+    background: linear-gradient( rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.7));
+}
+
+.testimonial .carousel-item {
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(80, 79, 79, 0.1);
+    border-radius: .5rem
+   
+}
+
+.testimonial .carousel-item img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.testimonial .carousel-item h3{
+    color: #333;
+    font-size: 20px;
+}
+
+.testimonial .carousel-item p {
+    color: white;
+    font-size: 15px;
+  
+}
+
+.testimonial .carousel-item .stars i {
+    color:orange;
+    font-size: 15px;
+}
+
+/*footer*/
+.footer {
+    position: relative;
+    margin-top: -110px;
+    padding-top: 180px;
+}
+
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    border: 1px solid #fff;
+    border-radius: 35px;
+    transition: 0.3s;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-right: 5px;
+    padding: 0;
+    text-align: left;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
