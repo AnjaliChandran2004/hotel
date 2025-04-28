@@ -54,7 +54,7 @@ li {
     color: orange;
 }
 
-.search-bar-container {
+/* .search-bar-container {
     position: absolute;
     top: -100%;
     left: 0;
@@ -88,7 +88,6 @@ li {
     color: orange;
 }
 
-/*login*/
 .login-form-container {
     position: fixed;
     top: -120%;
@@ -171,7 +170,7 @@ li {
     font-size: 5rem;
     color: #fff;
     cursor: pointer;
-}
+} */
 
 .carousel-caption {
     top: 0;

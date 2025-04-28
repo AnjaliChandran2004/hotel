@@ -16,17 +16,19 @@
 .heading .space {
     background: none;
 } 
-
 .book .row {
     display: flex;
     flex-wrap:wrap ;
-    gap: 80px;
+    gap: 40px;
     align-items:center;
+    padding: 20px;
 }
 .book .row .img img{
-    width: 500px;
+    width: 650px;
+    height: 580px;
 }
 .book .row form {
+    box-shadow: 0 1rem 2rem rgba(20, 20, 20, 0.2);
     flex: 1 1 ;
     padding: 10px;
 }
@@ -45,35 +47,11 @@
     text-transform: capitalize;
     font-size: 20px;
     padding: 1rem 0;
-    color: #666;
 }
-
-/* .services .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+.btn {
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    margin-top: 25px;
+    background-color: rgb(155, 155, 179);
 }
-.services .box-container .box {
-    flex: 1 1 30rem;
-    border-radius: .5rem;
-    padding: 1rem;
-    text-align: center;
-}
-.services .box-container .box i{
-    padding: 1rem;
-    font-size: 5rem;
-    color: orange;
-}
-.services .box-container .box h3 {
-    font-size: 2.5rem;
-    color: #333;
-}
-.services .box-container .box p{
-    font-size: 1.5rem;
-    color: #666;
-    padding: 1rem 0;
-}
-.services .box-container .box:hover {
-    background: oldlace;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-} */
