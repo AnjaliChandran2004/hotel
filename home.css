@@ -219,6 +219,8 @@ section {
     border-radius: .5rem;
 }
 /*availability end*/
+
+/*heading*/
 .section-title {
     position: relative;
     display: inline-block;
@@ -260,85 +262,21 @@ section {
     margin-bottom: 3rem;
 }
 
-.room .slide {
-    background: white;
-    border: .1rem solid rgba(20, 20, 20, 0.2);
-    border-radius: 10px;
-    margin-bottom: 4rem;
+/*room*/
+
+.b .btn {
+    display: block;
+    margin: auto;
+    width: 140px;
 }
 
-.room .slide img {
-    height:25rem;
-    width: 100%;
-    padding: 1.5rem;
-    overflow: hidden;
-    position: relative;
-}
-
-.room .slide img {
+img {
     transition: .5s;
-    width: 100%;
-    height: 100%;
-    border-radius: .5rem;
-    object-fit: cover;
 }
 
-.room .slide img:hover {
+img:hover {
     transform: scale(1.1);
 }
-
-.room .slide .image .price {
-    position: absolute;
-    top: 2.5rem;
-    left: 2.5rem;
-    background: blue;
-    color: white;
-    font-size: 1.7rem;
-    padding: .5rem 1rem;
-    border-radius: .5rem;
-    text-transform: lowercase;
-}
-
-.room .slide .image a {
-    position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    text-align: center;
-    font-size: 2rem;
-    background: white;
-    color: black;
-    border-radius: 50%;
-}
-
-.room .slide .image a:hover {
-    background: grey;
-    color: white;
-}
-
-.room .slide .content {
-    padding: 2rem;
-    padding-top: 0;
-}
-
-.room .slide .content h3 {
-    font-size: 2.5rem;
-    color: black;
-}
-
-.room .slide .content p {
-    font-size: 1.6rem;
-    color: #666;
-    padding: .5rem 0;
-    line-height: 1.5;
-}
-
-.room .slide .content {
-    font-size: 1.7rem;
-    color: blue09oi;
-} 
 
 /*Service*/
 .service-item {
@@ -354,7 +292,7 @@ section {
 }
 
 .service-item:hover {
-    background: rgb(144, 171, 247);
+    background: rgb(179, 198, 250);
     box-shadow: 0 1rem 2rem rgba(20, 20, 20, 0.2);
 }
 
@@ -462,35 +400,31 @@ span a {
 } */
 
 /*faq*/
-/* .faqs .row {
+.faqs .row {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.faqs .row .image {
-    flex: 1 1 40rem;
+.faqs .box:hover {
+    height: calc(5% - 5%);
 }
-.faqs .row .content {
-    flex: 1 1 40rem;
+
+.faqs .row .image img {
+    width: 600px;
 }
-.faqs .row .content .box {
-    margin-top: 2rem;
-}
+
 .faqs .row .content .box h3 {
-    font-size: 2rem;
     color: blue;
-    padding: 1.5rem;
     cursor: pointer;
 }
+
 .faqs .row .content .box p {
-    font-size: 1.6rem;
-    padding: 1.5rem 2rem;
+    font-size: 20px;
+    padding: 20px 30px;
     line-height: 2;
     color: #666;
     box-shadow: rgba(0, 0, 0, .08);
-} */
+} 
 
 
 /*review*/
@@ -534,7 +468,7 @@ span a {
 
 /*chef*/
 .team-item {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .06);
+    box-shadow: 0 0 45px #0000000f;
     height: calc(100% - 40px);
     transition: .5s;
 }
