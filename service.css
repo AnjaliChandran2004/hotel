@@ -175,4 +175,7 @@ li {
     letter-spacing: 1px;
     box-shadow: none;
 }
+.footer .row a {
+    text-decoration: none;
+}
 

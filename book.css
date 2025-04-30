@@ -91,27 +91,22 @@ li {
     display: none;
 }
 
-.book .row {
-    display: flex;
-    flex-wrap:wrap ;
-    gap: 40px;
-    align-items:center;
-    padding: 20px;
-}
+/*book*/
+
 .book .row .img img{
-    width: 650px;
-    height: 580px;
+    width: 600px;
+    height: 550px;
 }
+
 .book .row form {
+    background: #e4d9d9;
     box-shadow: 0 1rem 2rem rgba(20, 20, 20, 0.2);
-    flex: 1 1 ;
-    padding: 10px;
+
 }
-.book .row form .inputBox {
-    padding: 10px 0;
-}
+
 .book .row form .inputBox input{
-    width: 40%;
+    width: 90%;
+    border-radius: 10px;
     padding: 10px;
     border: .1rem solid rgba(0, 0, 0, .1);
     font-size: 20px;
@@ -123,7 +118,7 @@ li {
     font-size: 20px;
     padding: 1rem 0;
 }
-.btn {
+input .btn {
     display: block;
     margin: auto;
     border-radius: 50px;
@@ -174,4 +169,8 @@ li {
 .footer .btn.btn-link:hover {
     letter-spacing: 1px;
     box-shadow: none;
+}
+
+.footer .row a {
+    text-decoration: none;
 }

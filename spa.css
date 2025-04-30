@@ -106,9 +106,8 @@ h3 {
 .about .left {
     padding: 20px;
 }
-p {
+.content p {
     line-height: 30px;
-    color: #a4a4a4;
     margin-top: 20px;
     font-size: 15px;
     text-align: justify;
@@ -194,4 +193,8 @@ button span {
 .footer .btn.btn-link:hover {
     letter-spacing: 1px;
     box-shadow: none;
+}
+
+.footer .row a {
+    text-decoration: none;
 }
