@@ -3,11 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*navbar*/
 #navbar {
     position: sticky;
     top: 0;
     background: white;
 }
+
+li {
+    padding: 5px;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid white;
+} 
+
+.navbar-brand img {
+    border-radius: 20%;
+    width: 100px;
+}
+
 .navbar-nav .nav-link {
     margin-right: 10px;
     padding: 25px 0;
@@ -17,9 +39,20 @@
     outline: none;
 }
 
-.btn {
-    font-weight: 500;
-    text-transform: uppercase;
+.nav-item input{
+    width: 120px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.nav-item button i{
+   font-size: 20px;
+   margin-top: 25px;
+}
+
+.nav-item .icon {
+color: white;
 }
 
 .btn.btn-primary, .btn.btn-secondary {
@@ -45,15 +78,7 @@ section{
     background-size: cover;
     height: 100vh;
 }
-/* section::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: url(image/cbg.jpg);
-} */
+
 section .container {
     position: relative;
     min-width: 1100px;
@@ -70,7 +95,8 @@ section .container .contactinfo {
     height: 350px;
     background: #0f3959;
     z-index: 1;
-    padding: 40px;
+    padding-top: 50px;
+    padding-left: 20px;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
@@ -82,35 +108,17 @@ section .container .contactinfo h2 {
 }
 section .container .contactinfo .info {
     position: relative;
-    margin: 20px 0;
 }
 section .container .contactinfo .info li {
+    color: #fff;
+    font-size: 19px;
     position: relative;
     list-style: none;
     display: flex;
-    margin: 20px 0;
     cursor: pointer;
     align-items: flex-start;
 }
-section .container .contactinfo .info li span:nth-child(1) {
-    width: 30px;
-    min-width: 30px;
-}
-section .container .contactinfo .info li span:nth-child(1) i{
-    max-width: 100%;
-    filter: invert(1);
-    opacity: 0.5s;
-}
-section .container .contactinfo .info li span:nth-child(2) {
-    color: #fff;
-    margin-left: 10px;
-    font-weight: 300;
-    opacity: 0.5s;
-}
-section .container .contactinfo .info li:hover span:nth-child(1) i,
-section .container .contactinfo .info li:hover span:nth-child(2) {
-    opacity: 1;
-}
+
 section .container .contactinfo .sci {
     position: relative;
     display: flex;
@@ -119,12 +127,12 @@ section .container .contactinfo .sci li {
     list-style: none;
     margin-right: 15px;
 }
+
 section .container .contactinfo .sci li a i {
-    filter: invert(1);
-    opacity: 0.5;
+   color: #fff;
 }
 section .container .contactinfo .sci li:hover a i {
-    opacity: 1;
+    color: rgb(233, 233, 162);
 }
 section .container .contactForm {
     position: absolute;
@@ -211,10 +219,44 @@ section .container .contactForm  .inputBox input[type="submit"]:hover {
     background: rgb(50, 197, 223);
 }
 
+/*heading*/
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: rgb(197, 167, 129);
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: rgb(197, 167, 129);
+
+}
+
+.section-title.text-start::before 
+.section-title .text-start::after {
+    display: none;
+}
+
+/*footer*/
 .footer {
     position: relative;
-    margin-top: -110px;
-    padding-top: 180px;
+    padding-top: 60px;
 }
 
 .footer .row a {

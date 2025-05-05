@@ -1,7 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-}
 /*navbar*/
 #navbar {
     position: sticky;
@@ -38,9 +34,20 @@ li {
     outline: none;
 }
 
-.btn {
-    font-weight: 500;
-    text-transform: uppercase;
+.nav-item input{
+    width: 120px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.nav-item button i{
+   font-size: 20px;
+   margin-top: 25px;
+}
+
+.nav-item .icon {
+color: white;
 }
 
 .btn.btn-primary, .btn.btn-secondary {
@@ -94,18 +101,24 @@ li {
 /*book*/
 
 .book .row .img img{
-    width: 600px;
+    width: 650px;
     height: 550px;
 }
 
-.book .row form {
-    background: #e4d9d9;
-    box-shadow: 0 1rem 2rem rgba(20, 20, 20, 0.2);
+.book .row {
+    margin: 0;
+    padding: 0;
+}
 
+.book .row form {
+    box-shadow: 0 20px 20px rgba(20, 20, 20, 0.2);
+    width: 600px;
+    padding: 10px;
+    
 }
 
 .book .row form .inputBox input{
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
     padding: 10px;
     border: .1rem solid rgba(0, 0, 0, .1);
@@ -122,15 +135,15 @@ input .btn {
     display: block;
     margin: auto;
     border-radius: 50px;
-    margin-top: 25px;
-    background-color: rgb(155, 155, 179);
+}
+input .btn:hover {
+    background-color: #333;
 }
 
 /*footer*/
 .footer {
     position: relative;
-    margin-top: -110px;
-    padding-top: 180px;
+    padding-top: 60px;
 }
 
 .footer .btn.btn-social {

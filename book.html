@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="book.css">
 </head>
 <body>
+           
     <!--navigation-->
     <div class="container-xxl navigation bg-white p-0">
-        <!--navigation-->
         <div class="container-fluid bg-dark px-0" id="menu-bar">
             <div class="row gx-0">
                 <div class="col">
@@ -40,11 +40,10 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0" id="navbar">
                         <div class="col-lg-3 bg-dark d-none d-lg-block">
                             <a href="" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                                <h1 class="m-0 text-primary text-uppercase">Hotel</h1>
+                                <h1 class="m-0 text-warning text-uppercase">Hotel</h1>
                             </a>
                         </div>
                         <a href="" class="navbar-brand d-block d-lg-none">
@@ -79,24 +78,25 @@
                                     <a class="nav-link" href="spa.html">Spa</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="book.html">Book Now</a>
+                                    <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
-                                <li class="nav-item icons">
-                                    <a class="nav-link" href=""><i class="fas fa-search" id="search-btn"></i></a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="book.html">Booking</a>
                                 </li>
-                                <li class ="nav-item icons">
-                                    <a class="nav-link" href=""><i class="fas fa-user" id="login-btn"></i></a>   
-                                </li>
+                                
                             </ul>
-                            
+                            <form class="d-flex px-2" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-light" type="submit">Search</button>
+                              </form>
                         </div>
                     </div>
+
                 </div>
             </div>
             
         </div>
-    </div>        
-
+    </div>  
 
     <div class="text-center wow fadeIn mt-5">
         <h6 class="section-title text-center text-primary text-uppercase">Our Rooms</h6>
@@ -104,10 +104,10 @@
     </div>
     <section class="book" id="book">
         <div class="row">
-            <div class="col-6 img">
+            <div class="col-lg-6 md-3 img">
                 <img src="image/be.jpg" alt="" >
             </div>
-            <form action="" class="col-6">
+            <form action="" class="col-lg-6 md-3">
                 <div class="inputBox">
                     <h3>check-in</h3>
                     <input type="date">
@@ -123,14 +123,14 @@
                     <h3>How many</h3>
                     <input type="number" placeholder="number of guests">
                 </div>     
-                <input type="submit" class="btn" value="book now">
+                <input type="submit" class="btn btn-secondary d-block m-0 mt-4" value="book now">
                 
             </form>
         </div>
     </section>
 
     <!--footer-->
-    <div class="container-fluid bg-dark text-light footer wow fadeIn mt-5 p-0">
+    <div class="container-fluid bg-dark text-light footer wow fadeIn mt-5">
         <div class="container pb-5 ">
             <div class="row g-5">
                 <div class="col-md-6 col-lg-4">

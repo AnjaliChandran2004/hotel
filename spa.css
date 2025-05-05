@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/*navbar*/
 #navbar {
     position: sticky;
     top: 0;
@@ -41,9 +40,20 @@ li {
     outline: none;
 }
 
-.btn {
-    font-weight: 500;
-    text-transform: uppercase;
+.nav-item input{
+    width: 120px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.nav-item button i{
+   font-size: 20px;
+   margin-top: 25px;
+}
+
+.nav-item .icon {
+color: white;
 }
 
 .btn.btn-primary, .btn.btn-secondary {
@@ -56,9 +66,6 @@ li {
     cursor: pointer;
 }
 
-.icons i:hover{
-    color: orange;
-}
 
 /*about*/
 .top {
@@ -92,7 +99,7 @@ li {
 .content {
     display: flex;
     justify-content: space-between;
-    
+    padding: 10px;
 }
 .left, .right {
     width: 50%;
@@ -129,7 +136,7 @@ h3 {
     top: 0;
     left: 0;
     background-color: #cc8c18;
-    width: 93%;
+    width: 90%;
     height: 61vh;
     z-index: -1;
     margin: 50px;
@@ -150,11 +157,45 @@ button span {
     margin-top: 5px;
 }
 
+/*heading*/
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: rgb(197, 167, 129);
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: rgb(197, 167, 129);
+
+}
+
+.section-title.text-start::before 
+.section-title .text-start::after {
+    display: none;
+}
+
+
 /*footer*/
 .footer {
     position: relative;
-    margin-top: -110px;
-    padding-top: 180px;
+    padding-top: 60px;
 }
 
 .footer .btn.btn-social {

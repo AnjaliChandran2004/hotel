@@ -34,9 +34,20 @@ li {
     outline: none;
 }
 
-.btn {
-    font-weight: 500;
-    text-transform: uppercase;
+.nav-item input{
+    width: 120px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.nav-item button i{
+   font-size: 20px;
+   margin-top: 25px;
+}
+
+.nav-item .icon {
+color: white;
 }
 
 .btn.btn-primary, .btn.btn-secondary {
@@ -90,8 +101,7 @@ li {
 /*footer*/
 .footer {
     position: relative;
-    margin-top: -110px;
-    padding-top: 180px;
+    padding-top: 60px;
 }
 
 .footer .btn.btn-social {

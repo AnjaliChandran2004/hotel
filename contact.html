@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-     <!--navigation-->
-     <div class="container-xxl navigation bg-white p-0">
-        <!--navigation-->
+          
+    <!--navigation-->
+    <div class="container-xxl navigation bg-white p-0">
         <div class="container-fluid bg-dark px-0" id="menu-bar">
             <div class="row gx-0">
                 <div class="col">
@@ -41,46 +41,69 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0" id="navbar">
                         <div class="col-lg-3 bg-dark d-none d-lg-block">
                             <a href="" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                                <h1 class="m-0 text-primary text-uppercase">Hotel</h1>
+                                <h1 class="m-0 text-warning text-uppercase">Hotel</h1>
                             </a>
                         </div>
-                        
-                        <button type="button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon me-auto"></span>
+                        <a href="" class="navbar-brand d-block d-lg-none">
+                            <h1 class="m-0 text-primary text-uppercase">Hotel</h1>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                              </svg>
                         </button>
-                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                            <div class="navbar-nav mr-auto py-0">
-                                <a href="" class="nav-item nav-link active">Home</a>
-                                <a href="" class="nav-item nav-link">About</a>
-                                <a href="" class="nav-item nav-link">Service</a>
-                                <a href="" class="nav-item nav-link">Spa</a>
-                                <a href="" class="nav-item nav-link">Hall</a>
-                                <a href="" class="nav-item nav-link">Food</a>
-                                <a href="" class="nav-item nav-link">Room</a>
-                            </div>
-                    
-                            <a href="" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">
-                                Book Now <i class="fa fa-arrow-right ms-3"></i>
-                            </a>
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="navbar-nav ms-auto mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="service.html">Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="seminar.html">Hall</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="room.html">Rooms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="food.html">Food</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="spa.html">Spa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="book.html">Booking</a>
+                                </li>
+                                
+                            </ul>
+                            <form class="d-flex px-2" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-light" type="submit">Search</button>
+                              </form>
                         </div>
                     </div>
+
                 </div>
             </div>
             
         </div>
-    </div>        
-
+    </div>
 
     <section>
         <div class="container">
             <div class="contactinfo">
                 <div>
                     <div>
-
                         <h2>Contact Info</h2>
                         <ul class="info">
                             <li>

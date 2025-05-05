@@ -15,7 +15,6 @@
 
     <!--navigation-->
     <div class="container-xxl navigation bg-white p-0">
-        <!--navigation-->
         <div class="container-fluid bg-dark px-0" id="menu-bar">
             <div class="row gx-0">
                 <div class="col">
@@ -42,28 +41,22 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0" id="navbar">
+                    <div class="navbar navbar-expand-lg bg-dark navbar-dark p-2 p-lg-0" id="navbar">
                         <div class="col-lg-3 bg-dark d-none d-lg-block">
                             <a href="" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                                <h1 class="m-0 text-primary text-uppercase">Hotel</h1>
+                                <h1 class="m-0 p-0 text-warning text-uppercase">Hotel</h1>
                             </a>
                         </div>
-                        
-                        <button type="button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon me-auto"></span>
+                        <a href="" class="navbar-brand d-block d-lg-none">
+                            <h1 class="m-0 text-primary text-uppercase">Hotel</h1>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                              </svg>
                         </button>
-                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                            <div class="navbar-nav mr-auto py-0 p-4">
-                                <a href="" class="nav-item nav-link active">Home</a>
-                                <a href="" class="nav-item nav-link">About</a>
-                                <a href="" class="nav-item nav-link">Service</a>
-                                <a href="" class="nav-item nav-link">Spa</a>
-                                <a href="" class="nav-item nav-link">Hall</a>
-                                <a href="" class="nav-item nav-link">Food</a>
-                                <a href="" class="nav-item nav-link">Room</a>
-                            </div>
-                            <!-- <ul class="navbar-nav mr-auto py-0 mb-lg-0">
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="navbar-nav ms-auto mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link" href="home.html">Home</a>
                                 </li>
@@ -86,21 +79,20 @@
                                     <a class="nav-link" href="spa.html">Spa</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="book.html">Book Now</a>
+                                    <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
-                                <li class="nav-item icons">
-                                    <a class="nav-link" href=""><i class="fas fa-search" id="search-btn"></i></a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="book.html">Booking</a>
                                 </li>
-                                <li class ="nav-item icons">
-                                    <a class="nav-link" href=""><i class="fas fa-user" id="login-btn"></i></a>   
-                                </li>
-                            </ul> -->
-                            
-                            <a href="" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">
-                                Book Now <i class="fa fa-arrow-right ms-3"></i>
-                            </a>
+                                
+                            </ul>
+                            <form class="d-flex px-2" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-light" type="submit">Search</button>
+                              </form>
                         </div>
                     </div>
+
                 </div>
             </div>
             
@@ -154,26 +146,6 @@
             </div> 
         </div>
 
-        <!-- <form action="" class="search-bar-container">
-            <input type="search" id="search-bar" placeholder="search here...">
-            <label for="search-bar" class="fas fa-search"></label>
-        </form> -->
-
-        <!--login-->
-        <!-- <div class="login-form-container">
-            <i class="fas fa-times" id="form-close"></i>
-            <form action="">
-                <h3>login</h3>
-                <input type="email" class="box" placeholder="enter your email">
-                <input type="password" class="box" placeholder="enter your password">
-                <input type="submit" value="login now" class="btn">
-                <input type="checkbox" id="remember">
-                <label for="remember">Remember</label>
-                <p>forgot password <a href="">click here</a></p>
-                <p>don't have an account? <a href="">register now</a></p>
-            </form>
-        </div> -->
-        
         <!--availability section -->
         <section class="availability">
             <form action="">
@@ -449,7 +421,7 @@
                         <div class="service-item rounded">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-item-center justify-content-center">
-                                    <i class="fa fa-hotel fa-2x text-primary"></i>
+                                    <i class="fa fa-hotel fa-2x "></i>
                                 </div>
                             </div>
                             <h5 class="mb-3"><a href="room.html">Rooms</a></h5>
@@ -463,7 +435,7 @@
                         <div class="service-item rounded">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-item-center justify-content-center">
-                                    <i class="fa fa-utensils fa-2x text-primary"></i>
+                                    <i class="fa fa-utensils fa-2x "></i>
                                 </div>
                             </div>
                             <h5 class="mb-3"><a href="food.html">Food</a></h5>
@@ -477,7 +449,7 @@
                         <div class="service-item rounded">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-item-center justify-content-center">
-                                    <i class="fa fa-spa fa-2x text-primary"></i>
+                                    <i class="fa fa-spa fa-2x "></i>
                                 </div>
                             </div>
                             <h5 class="mb-3"><a href="spa.html">spa</a></h5>
@@ -491,7 +463,7 @@
                         <div class="service-item rounded">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-item-center justify-content-center">
-                                    <i class="fa fa-swimmer fa-2x text-primary"></i>
+                                    <i class="fa fa-swimmer fa-2x"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3"><a href="swim.html">Swimming Pool</a></h5>
@@ -505,7 +477,7 @@
                         <div class="service-item rounded">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-item-center justify-content-center">
-                                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
+                                    <i class="fa fa-glass-cheers fa-2x"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3"><a href="">Drinks</a></h5>
@@ -519,7 +491,7 @@
                         <div class="service-item rounded">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-item-center justify-content-center">
-                                    <i class="fa fa-hotel fa-2x text-primary"></i>
+                                    <i class="fa fa-hotel fa-2x"></i>
                                 </div>
                             </div>
                             <h5 class="mb-3"><a href="seminar.html">Seminar & Party Hall</a></h5>
@@ -548,7 +520,7 @@
                     <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom-mb-5">
                         <li class="nav-item">
                             <a href="#menu-item" class="d-flex align-items-center text-start mx-3 pb-3">
-                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <i class="fa fa-coffee fa-2x"></i>
                                 <div class="ps-3">
                                     <small class="text-body">Popular</small>
                                     <h6 class="mt-1 mb-0">Breakfast</h6>
@@ -557,7 +529,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="#menu-item" class="d-flex align-items-center text-start mx-3 pb-3">
-                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <i class="fa fa-hamburger fa-2x"></i>
                                 <div class="ps-3">
                                     <small class="text-body">Special</small>
                                     <h6 class="mt-1 mb-0">Lunch</h6>
@@ -566,7 +538,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="#menu-item" class="d-flex align-items-center text-start mx-3 pb-3">
-                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <i class="fa fa-utensils fa-2x"></i>
                                 <div class="ps-3">
                                     <small class="text-body">Lovely</small>
                                     <h6 class="mt-1 mb-0">Dinner</h6>
@@ -577,7 +549,7 @@
                     <div class="tab-content" id="menu-item">
                         <div class="tab-pune fade show p-0 active">
                             <div class="row g-4">
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-md-6">
                                     <div class="d-flex align-items-center">
                                         <img src="image/br.jpeg" alt="" class="flex-shrink-0 img-fluid rounded" width="100">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
@@ -591,7 +563,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-md-6">
                                     <div class="d-flex align-items-center">
                                         <img src="image/br1.jpeg" alt="" class="flex-shrink-0 img-fluid rounded" width="100">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
@@ -605,7 +577,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-md-6">
                                     <div class="d-flex align-items-center">
                                         <img src="image/br2.jpeg" alt="" class="flex-shrink-0 img-fluid rounded" width="100">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
@@ -619,7 +591,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-md-6">
                                     <div class="d-flex align-items-center">
                                         <img src="image/br3.jpeg" alt="" class="flex-shrink-0 img-fluid rounded" width="100">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
@@ -633,7 +605,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-md-6">
                                     <div class="d-flex align-items-center">
                                         <img src="image/br4.jpeg" alt="" class="flex-shrink-0 img-fluid rounded" width="100">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
@@ -647,7 +619,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-md-6">
                                     <div class="d-flex align-items-center">
                                         <img src="image/br5.jpeg" alt="" class="flex-shrink-0 img-fluid rounded" width="100">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
@@ -661,7 +633,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-md-6">
                                     <div class="d-flex align-items-center">
                                         <img src="image/br6.jpeg" alt="" class="flex-shrink-0 img-fluid rounded" width="100">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
@@ -675,7 +647,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-md-6">
                                     <div class="d-flex align-items-center">
                                         <img src="image/br7.jpeg" alt="" class="flex-shrink-0 img-fluid rounded" width="100">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
@@ -994,7 +966,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 wow fadeinUp">
                     <div class="team-item text-center rounded overflow-hidden">
-                        <div class="rounded-circle overflow-hidden m-4">
+                        <div class="overflow-hidden m-4">
                             <img class="img-fluid" src="image/chef1.jpg" alt="">
                         </div>
                         <h5 class="mb-0">name</h5>
@@ -1008,7 +980,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeinUp">
                     <div class="team-item text-center rounded overflow-hidden">
-                        <div class="rounded-circle overflow-hidden m-4">
+                        <div class="overflow-hidden m-4">
                             <img class="img-fluid" src="image/chef3.jpg" alt="">
                         </div>
                         <h5 class="mb-0">name</h5>
@@ -1022,7 +994,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeinUp">
                     <div class="team-item text-center rounded overflow-hidden">
-                        <div class="rounded-circle overflow-hidden m-4">
+                        <div class="overflow-hidden m-4">
                             <img class="img-fluid" src="image/chef.jpg" alt="">
                         </div>
                         <h5 class="mb-0">name</h5>
@@ -1036,7 +1008,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeinUp">
                     <div class="team-item text-center rounded overflow-hidden">
-                        <div class="rounded-circle overflow-hidden m-4">
+                        <div class="overflow-hidden m-4">
                             <img class="img-fluid" src="image/chef4.jpg" alt="">
                         </div>
                         <h5 class="mb-0">name</h5>
@@ -1060,10 +1032,10 @@
 
         <section class="faqs" id="faq">
             <div class="row">
-                <div class="image col-6">
+                <div class="image col-lg-6 col-md-6">
                     <img src="image/faq.jpeg" alt="">
                 </div>
-                <div class="content col-6">
+                <div class="content col-lg-6 col-md-6">
                     <div class="box border">
                         <h5>What are payment methods?</h5>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, enim.</p>
