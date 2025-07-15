@@ -1,22 +1,9 @@
-
 /********** Template CSS **********/
 :root {
     --primary: #FEA116;
     --light: #F1F8FF;
     --dark: #0F172B;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-transform: capitalize;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: all .2s linear;
-}
-
 .fw-medium {
     font-weight: 500 !important;
 }
@@ -98,13 +85,13 @@
     outline: none;
 }
 
+.navbar .nav-item {
+    margin-left: 10px;
+}
+
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     color: var(--primary);
-}
-
-.navbar .nav-item {
-    margin-left: 10px;
 }
 
 @media (max-width: 991.98px) {
@@ -153,86 +140,112 @@
     display: none;
 }
 
-/*** Food ***/
-.food .row .box {
-    overflow: hidden;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
-    border: 10px solid #fff;
-    border-radius: .5rem;
-    margin-bottom: 10px;
+/*** Hall ***/
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.hall {
     position: relative;
+    padding: 40px;
 
 }
- .food .row .box img {
-    width: 400px;
-    height: 300px;
-}
-.food .row .box .content {
-    position: absolute;
-    top: -100%;
-    left: 0;
-    width: 400px;
-    height: 300px;
-    text-align: center;
-    background: rgba(0, 0, 0, .7);
-    padding-top:80px;
-    padding-right: 50px;
-    margin-left:10px;
-}
-.food .row .box:hover .content {
-    top: 0;
-}
-.food .row .box .content h3 {
-    font-size: 2.5rem;
-    color: orange;
-}
-.food .row .box .content p {
-    font-size: 1.5rem;
-    color: #eee;
-} 
-.food .row .box .content .btn {
-    background: rgb(192, 174, 13);
-}
-.heading {
-    text-align: center;
-    padding: 2.5rem;
+
+.left, .right {
+    width: 50%;
 }
 
-.section-title {
+h2 {
+    font-size: 35px;
+    font-family: serif;
+    color: #24416b;
+    text-align: center;
+}
+
+.hall .left {
+    margin-top: 30px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.content p {
+    line-height: 30px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+.right {
     position: relative;
-    display: inline-block;
 }
 
-.section-title::before {
-    position: absolute;
-    content: "";
-    width: 45px;
-    height: 2px;
-    top: 50%;
-    left: -55px;
-    margin-top: -1px;
-    background: rgb(197, 167, 129);
+.right img {
+    flex: 1;
+    width: 600px;
+    height: 400px;
 }
 
-.section-title::after {
-    position: absolute;
-    content: "";
-    width: 45px;
-    height: 2px;
-    top: 50%;
-    right: -55px;
-    margin-top: -1px;
-    background: rgb(197, 167, 129);
+@media (max-width:780px) {
+    .content {
+        flex-direction: column;
+    }
+    .right img {
+        width: 500px;
+        height: 350px;
+        object-fit: cover;
+    }
+    .left { 
+        width: 450px;
+        margin-left: 10px;
+        
+    }
 
 }
+/*** Hall End***/
 
-.section-title.text-start::before 
-.section-title .text-start::after {
-    display: none;
+/*** Service ***/
+.service-item {
+    height: 320px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
 }
+
+.service-item:hover {
+    background: var(--primary);
+}
+
+.service-item .service-icon {
+    margin: 0 auto 30px auto;
+    width: 65px;
+    height: 65px;
+    transition: .5s;
+}
+
+.service-item i,
+.service-item h5,
+.service-item p {
+    transition: .5s;
+}
+
+.service-item:hover i,
+.service-item:hover h5,
+.service-item:hover p {
+    color: #FFFFFF !important;
+}
+
 
 /*** Footer ***/
-
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;

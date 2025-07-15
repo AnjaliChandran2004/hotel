@@ -1,92 +1,123 @@
-* {
-    margin: 0;
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+.fw-semi-bold {
+    font-weight: 600 !important;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
     padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 2px;
 }
-/*navbar*/
-#navbar {
-    position: sticky;
-    top: 0;
-    background: white;
-}
-
-li {
-    padding: 5px;
-}
-
-.nav-link {
-    font-size: 15px;
-    font-weight: bold;
-    border: 2px solid transparent;
-    
-}
-
-.nav-link:hover{
-    border-bottom: 1px solid white;
-} 
-
-.navbar-brand img {
-    border-radius: 20%;
-    width: 100px;
-}
-
-.navbar-nav .nav-link {
-    margin-right: 10px;
+/*** Navbar ***/
+.navbar-dark .navbar-nav .nav-link {
+    margin-right: 30px;
     padding: 25px 0;
-    color: #fff;
+    color: #FFFFFF;
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
 }
 
-.nav-item input{
-    width: 120px;
-    padding: 5px;
-    border-radius: 10px;
-    margin-top: 20px;
+.navbar .nav-item {
+    margin-left: 10px;
 }
 
-.nav-item button i{
-   font-size: 20px;
-   margin-top: 25px;
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary);
 }
 
-.nav-item .icon {
-color: white;
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+     #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
-.btn.btn-primary, .btn.btn-secondary {
-    color: #fff;
-}
-
-.icons i {
-    font-size: 20px;
-    color: #fff;
-    cursor: pointer;
-}
-
-.icons i:hover{
-    color: orange;
-}
-
-section{
+/*** Contact ***/
+.contact{
     position: relative;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 110vh;
     background: url(image/contactbg.jpg);
     background-size: cover;
     height: 100vh;
 }
 
-section .container {
+.contact .container {
     position: relative;
     min-width: 1100px;
-    min-height: 550px;
+    min-height: 600px;
     display: flex;
     z-index: 1000;
 }
-section .container .contactinfo {
+.contact .container .contactinfo {
     position: relative;
     top: 40px;
     transform: translate(120px, 0px);
@@ -101,15 +132,15 @@ section .container .contactinfo {
     justify-content: space-between;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
-section .container .contactinfo h2 {
+.contact .container .contactinfo h2 {
     color: #fff;
     font-size: 24px;
     font-weight: 500;
 }
-section .container .contactinfo .info {
+.contact .container .contactinfo .info {
     position: relative;
 }
-section .container .contactinfo .info li {
+.contact .container .contactinfo .info li {
     color: #fff;
     font-size: 19px;
     position: relative;
@@ -119,22 +150,22 @@ section .container .contactinfo .info li {
     align-items: flex-start;
 }
 
-section .container .contactinfo .sci {
+.contact .container .contactinfo .sci {
     position: relative;
     display: flex;
 }
-section .container .contactinfo .sci li {
+.contact .container .contactinfo .sci li {
     list-style: none;
     margin-right: 15px;
 }
 
-section .container .contactinfo .sci li a i {
+.contact .container .contactinfo .sci li a i {
    color: #fff;
 }
-section .container .contactinfo .sci li:hover a i {
+.contact .container .contactinfo .sci li:hover a i {
     color: rgb(233, 233, 162);
 }
-section .container .contactForm {
+.contact .container .contactForm {
     position: absolute;
     padding: 30px;
     background:transparent;
@@ -143,36 +174,37 @@ section .container .contactForm {
     box-shadow: 0 0 10px  rgba(0, 0, 0, .2);
     width: 700px;
     height: 300px;
-    transform: translate(400px, 80px);
+    transform: translate(400px, 60px);
     height: 100%;
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
 }
-section .container .contactForm h2 {
+.contact .container .contactForm h2 {
     color:#fff;
     font-size: 24px;
     font-weight: 500;
 }
-section .container .contactForm .formBox {
+.container .contactForm .formBox {
     position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 30px;
+    padding-top: 20px;
 } 
-section .container .contactForm .formBox .inputBox {
+.container .contactForm .formBox .inputBox {
     position: relative;
-    margin: 0 0 35px 0;
+    margin: 10px 0 20px 0;
+   
 }
-section .container .contactForm .formBox .inputBox .w50 {
+.container .contactForm .formBox .inputBox .w50 {
     width: 40%;
 }
-section .container .contactForm .formBox .inputBox .w100 {
+.container .contactForm .formBox .inputBox .w100 {
     width: 100%;
 }
-section .container .contactForm .formBox .inputBox input,
-section .container .contactForm .formBox .inputBox textarea {
+.container .contactForm .formBox .inputBox input,
+.container .contactForm .formBox .inputBox textarea {
     width: 100%;
-    padding: 5px 0;
+    padding: 10px 0;
     resize: none;
     font-weight: 300;
     font-size: 18px;
@@ -182,10 +214,10 @@ section .container .contactForm .formBox .inputBox textarea {
     border-bottom: 1px solid #777;
     outline: none;
 }
-section .container .contactForm .formBox .inputBox textarea {
+.container .contactForm .formBox .inputBox textarea {
     min-height: 80px;
 }
-section .container .contactForm .formBox .inputBox span {
+.container .contactForm .formBox .inputBox span {
     position: relative;
     left: 0;
     padding: 5px 0;
@@ -195,74 +227,31 @@ section .container .contactForm .formBox .inputBox span {
     transition: 0.5s;
     pointer-events: none;
 }
-section .container .contactForm .formBox .inputBox input:focus ~ span,
-section .container .contactForm .formBox .inputBox textarea:focus ~ span,
-section .container .contactForm .formBox .inputBox input:valid ~ span,
-section .container .contactForm .formBox .inputBox textarea:valid ~span {
+.container .contactForm .formBox .inputBox input:focus ~ span,
+.container .contactForm .formBox .inputBox textarea:focus ~ span,
+.container .contactForm .formBox .inputBox input:valid ~ span,
+.container .contactForm .formBox .inputBox textarea:valid ~span {
     transform: translateY(-20px);
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1px;
     color: #ff568c;
 }
-section .container .contactForm .inputBox input[type="submit"] {
-    width: 100%;
+.contactForm .inputBox input[type="submit"] {
+    display: block;
+    margin: 0 auto;
     font-size: large;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(2, 7, 56);
+    color: white;
     position: relative;
     cursor: pointer;
     border: none;
-    padding: 12px;
-}
-section .container .contactForm  .inputBox input[type="submit"]:hover {
-    background: rgb(50, 197, 223);
+    padding: 5px 20px 5px 20px;
 }
 
-/*heading*/
-.section-title {
-    position: relative;
-    display: inline-block;
-}
 
-.section-title::before {
-    position: absolute;
-    content: "";
-    width: 45px;
-    height: 2px;
-    top: 50%;
-    left: -55px;
-    margin-top: -1px;
-    background: rgb(197, 167, 129);
-}
-
-.section-title::after {
-    position: absolute;
-    content: "";
-    width: 45px;
-    height: 2px;
-    top: 50%;
-    right: -55px;
-    margin-top: -1px;
-    background: rgb(197, 167, 129);
-
-}
-
-.section-title.text-start::before 
-.section-title .text-start::after {
-    display: none;
-}
-
-/*footer*/
-.footer {
-    position: relative;
-    padding-top: 60px;
-}
-
-.footer .row a {
-    text-decoration: none;
-}
-
+/*** Footer ***/
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
@@ -270,28 +259,32 @@ section .container .contactForm  .inputBox input[type="submit"]:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: aliceblue;
-    border: 1px solid #fff;
+    color: var(--light);
+    border: 1px solid #FFFFFF;
     border-radius: 35px;
-    transition: 0.3s;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
 }
 
 .footer .btn.btn-link {
     display: block;
-    margin-right: 5px;
+    margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: white;
+    color: #FFFFFF;
     font-size: 15px;
     font-weight: normal;
     text-transform: capitalize;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
-    font-family:"Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
 }
@@ -301,4 +294,24 @@ section .container .contactForm  .inputBox input[type="submit"]:hover {
     box-shadow: none;
 }
 
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
 
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .3);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}

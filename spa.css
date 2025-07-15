@@ -1,71 +1,68 @@
+/********** Template CSS **********/
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.fw-medium {
+    font-weight: 500 !important;
 }
 
-#navbar {
-    position: sticky;
-    top: 0;
-    background: white;
+.fw-semi-bold {
+    font-weight: 600 !important;
 }
 
-li {
-    padding: 5px;
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
 }
 
-.nav-link {
-    font-size: 15px;
-    font-weight: bold;
-    border: 2px solid transparent;
-    
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
 }
 
-.nav-link:hover{
-    border-bottom: 1px solid white;
-} 
-
-.navbar-brand img {
-    border-radius: 20%;
-    width: 100px;
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
 }
 
-.navbar-nav .nav-link {
-    margin-right: 10px;
+/*** Navbar ***/
+.navbar-dark .navbar-nav .nav-link {
+    margin-right: 30px;
     padding: 25px 0;
-    color: #fff;
+    color: #FFFFFF;
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
 }
 
-.nav-item input{
-    width: 120px;
-    padding: 5px;
-    border-radius: 10px;
-    margin-top: 20px;
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary);
 }
 
-.nav-item button i{
-   font-size: 20px;
-   margin-top: 25px;
+.navbar .nav-item {
+    margin-left: 10px;
 }
 
-.nav-item .icon {
-color: white;
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
-
-.btn.btn-primary, .btn.btn-secondary {
-    color: #fff;
-}
-
-.icons i {
-    font-size: 20px;
-    color: #fff;
-    cursor: pointer;
-}
-
 
 /*about*/
 .top {
@@ -98,7 +95,9 @@ color: white;
 }
 .content {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
     padding: 10px;
 }
 .left, .right {
@@ -112,6 +111,8 @@ h3 {
 }
 .about .left {
     padding: 20px;
+    flex: 1;
+    min-width: 300px;
 }
 .content p {
     line-height: 30px;
@@ -127,6 +128,7 @@ h3 {
     position: relative;
 }
 .right img {
+    flex: 1;
     width: 600px;
     height: 400px;
 }
@@ -156,6 +158,35 @@ button i {
 button span {
     margin-top: 5px;
 }
+
+@media (max-width:780px) {
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .about .right::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #cc8c18;
+        width: 480px;
+        height: 59vh;
+        z-index: -1;
+    }
+
+    .about .left h3{
+        font-size: 26px;
+        min-width: 450px;
+    }
+
+    .about .left p {
+        font-size: 16px;
+        min-width: 450px;
+    }
+
+}
+
 
 /*heading*/
 .section-title {
@@ -191,13 +222,45 @@ button span {
     display: none;
 }
 
-
-/*footer*/
-.footer {
-    position: relative;
-    padding-top: 60px;
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
 }
 
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 2px;
+}
+
+/*** Footer ***/
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
@@ -205,28 +268,32 @@ button span {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: aliceblue;
-    border: 1px solid #fff;
+    color: var(--light);
+    border: 1px solid #FFFFFF;
     border-radius: 35px;
-    transition: 0.3s;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
 }
 
 .footer .btn.btn-link {
     display: block;
-    margin-right: 5px;
+    margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: white;
+    color: #FFFFFF;
     font-size: 15px;
     font-weight: normal;
     text-transform: capitalize;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
-    font-family:"Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
 }
@@ -236,6 +303,24 @@ button span {
     box-shadow: none;
 }
 
-.footer .row a {
-    text-decoration: none;
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .3);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
 }
